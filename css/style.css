@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul li {
+    color: aliceblue;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.home h1{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 4%;
+}
+
+.home .wrap-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .wrap-container .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent; /* Agregamos un borde transparente */
+    border-radius: 5px; /* Puedes ajustar esto según tus preferencias */
+    box-shadow: 0 0 3px #00ff00, 0 0 3px #00ff00, 0 0 3px #00ff00, 0 0 3px #00ff00; /* Aplicamos varias sombras con diferentes tamaños y colores */
+    height: 200px;
+    width: 400px;
+    color: aliceblue;
+    margin: 0px;
+}
+
+.info {
+    height: 100vh;
+    width: 100%;
+    margin-top: 7%;
+    display: flex; /* Cambio: Usamos flexbox para colocar .info-container y .info-img-container en línea */
+}
+
+.info .two-columns {
+    display: flex;
+    flex: 1; /* Cambio: Hacemos que ambos divs ocupen la misma cantidad de espacio */
+}
+
+.info-container {
+    color: aliceblue;
+    flex: 1; /* Cambio: Hacemos que .info-container ocupe la mitad del espacio disponible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-img-container {
+    flex: 1; /* Cambio: Hacemos que .info-img-container ocupe la otra mitad del espacio disponible */
+    height: 100%;
+    position: relative; /* Cambio: Necesario para posicionar imágenes de manera absoluta */
+}
+
+.info-img-container img {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%); /* Cambio: Centramos las imágenes en .info-img-container */
+    border: 2px solid transparent; /* Agregamos un borde transparente */
+    border-radius: 5px; /* Puedes ajustar esto según tus preferencias */
+    box-shadow: 0 0 3px #00ff00, 0 0 3px #00ff00, 0 0 3px #00ff00, 0 0 3px #00ff00; /* Aplicamos varias sombras con diferentes tamaños y colores */
+}
+
+.info-img-container .info-img-1 {
+    left: 65%;
+    top: 12%;
+    transform: rotate(15deg);
+    z-index: 1; /* Cambio: Para superponer esta imagen sobre las otras */
+}
+
+.info-img-container .info-img-2 {
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Centramos la imagen grande */
+    box-shadow: 0 0 3px #00ff00, 0 0 3px #00ff00, 0 0 30px #00ff00, 0 0 5px #00ff00; /* Aplicamos varias sombras con diferentes tamaños y colores */
+    
+}
+
+.info-img-container .info-img-3 {
+    left: 6%;
+    top: 63%;
+    transform: rotate(15deg);
+    z-index: 1; /* Cambio: Para superponer esta imagen sobre las otras */
+}
+
+.neon-border {
+    border: 2px solid transparent; /* Agregamos un borde transparente */
+    border-radius: 5px; /* Puedes ajustar esto según tus preferencias */
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00; /* Aplicamos varias sombras con diferentes tamaños y colores */
+    animation: neon 1.5s infinite alternate; /* Animamos el efecto */
+  }
+  
