@@ -100,8 +100,9 @@ nav ul li {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); /* Centramos la imagen grande */
-    box-shadow: 0 0 3px #00ff00, 0 0 3px #00ff00, 0 0 30px #00ff00, 0 0 5px #00ff00; /* Aplicamos varias sombras con diferentes tamaños y colores */
-    
+    box-shadow: 0px 1px 5px 9px rgba(0,255,0,0.75);
+    -webkit-box-shadow: 0px 1px 40px 9px rgba(0,255,0,0.75);
+    -moz-box-shadow: 0px 1px 85px 9px rgba(0,255,0,0.75);    
 }
 
 .info-img-container .info-img-3 {
