@@ -46,7 +46,29 @@ nav ul li {
     
 }
 
+#navMenu {
+    display: none;
+}
 
+#hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
 
 .home h1{
     font-size: var(--title-size);
@@ -198,13 +220,11 @@ nav ul li {
   
 @media screen and (max-width:768px) {
 
-    nav ul{
-        background-color: #06b906;
-        width: 100%;
-        height: 30px;
-    }
-    nav ul li{
-        display: none;
+    #navMenu  li {
+        text-align: center;
+        
+        
+
     }
 
     .wrap-container{
