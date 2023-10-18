@@ -9,13 +9,16 @@
     box-sizing: border-box;
 }
 body {
+    
     height: 100%;
     margin: 3px;
     overflow-x: hidden;
     background-color: black;
-    border: 3px solid #00ff00;
+    border: 1px solid #00ff00;
     box-shadow: 0 0 3px #00ff00, 0 0 3px #00ff00, 0 0 3px #00ff00, 0 0 3px #00ff00; /* Aplicamos varias sombras con diferentes tamaños y colores */
-    height: 500vh;
+    height: 100%;
+
+    
 }
 
 .coin {
@@ -40,14 +43,18 @@ nav ul li {
     text-decoration: none;
     list-style: none;
     font-size: 1.5rem;
+    
 }
+
+
 
 .home h1{
     font-size: var(--title-size);
     color: white;
     text-align: center;
-    margin-top: 10%;
     margin-bottom: 4%;
+    margin-top: 7%;
+
 }
 
 .span-color{
@@ -57,12 +64,16 @@ nav ul li {
 .home h3{
     font-size: 2.5rem;
     color: var(--title-color);
+        z-index: 5;
+
 }
 
 .home .wrap-container{
     display: flex;
     justify-content: center;
     align-items: center;
+        z-index: 5;
+
 }
 
 .home .wrap-container .container{
@@ -160,6 +171,30 @@ nav ul li {
     box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00; /* Aplicamos varias sombras con diferentes tamaños y colores */
     animation: neon 1.5s infinite alternate; /* Animamos el efecto */
   }
+
+
+
+  .galery h1{
+    font-size: var(--title-size);
+    color: white;
+    text-align: center;
+    margin-top: 7%;
+
+  }
+
+  .galery .wrap-galery
+  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 9rem;
+    margin-top: 7%;
+  }
+  .galery .wrap-galery img{
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+  }
   
 @media screen and (max-width:768px) {
 
@@ -181,6 +216,10 @@ nav ul li {
         margin-top: 18%;
     }
 
+    .home .wrap-container .container{
+        margin: 15px;
+    }
+
     .two-columns{
         display: flex;
         flex-wrap: wrap;
@@ -196,4 +235,8 @@ nav ul li {
         margin-top: 20%;
     
     }
+
+    .galery{
+        margin-top: 500px;
+      }
 }
