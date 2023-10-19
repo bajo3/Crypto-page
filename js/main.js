@@ -55,13 +55,10 @@ function getCoinPrice(coinSymbol, displayElement) {
             // Compara con el precio anterior
             if (previousPrices[coinSymbol] < currentPrice) {
                 priceElement.css("color", "green"); // Precio subió (verde)
-                priceElement.html(`&#8593; ${currentPrice.toFixed(2)} USD`);
             } else if (previousPrices[coinSymbol] > currentPrice) {
                 priceElement.css("color", "red"); // Precio bajó (rojo)
-                priceElement.html(`&#8595; ${currentPrice.toFixed(2)} USD`);
             } else {
                 priceElement.css("color", "black"); // Precio sin cambios
-                priceElement.html(`&#8596; ${currentPrice.toFixed(2)} USD`);
             }
             
             // Almacena el precio actual como precio anterior
