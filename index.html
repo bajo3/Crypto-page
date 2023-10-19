@@ -18,18 +18,18 @@
     <div id='stars2'></div>
     <div id='stars3'></div>
     <header>
-        <nav >
-            <ul id="navMenu">
-                <li ><a href="#home">Inicio</a></li>
-                <li><a href="#info">Informacion</a></li>
-                <li><a href="#tradding">Tradding</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+        <nav>
             <button id="hamburger" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+            <ul id="navMenu">
+                <li><a href="#home" onclick="closeMenu()">Inicio</a></li>
+                <li><a href="#info" onclick="closeMenu()">Información</a></li>
+                <li><a href="#trading" onclick="closeMenu()">Trading</a></li>
+                <li><a href="#contacto" onclick="closeMenu()">Contacto</a></li>
+            </ul>
         </nav>
     </header>
     <main>

@@ -25,6 +25,9 @@ nav {
 
     z-index: 99;
     box-shadow: none; 
+    max-height: 0; /* Inicialmente oculto */
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out; /* Transición suave */
 }
 
 nav ul {
@@ -32,6 +35,9 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    background-color: black;
+    transition: background-color 0.5s; /* Transición de color de fondo */
+    
 }
 
 nav ul li {
@@ -590,4 +596,5 @@ html {
       transform: translateY(-2000px);
     }
   }
+  
   
