@@ -195,6 +195,9 @@ nav ul li a:hover {
 .info .two-columns {
     display: flex;
     flex: 1; /* Cambio: Hacemos que ambos divs ocupen la misma cantidad de espacio */
+    justify-content: center;
+    align-items: center;
+ 
 }
 
 .info h2{
@@ -442,6 +445,13 @@ button:hover {
 
     .info {
         margin-top: 18%;
+    }
+    .info h2{
+        font-size: 10vw;
+    }
+
+    .info p{
+        font-size: 7vw;
     }
 
     .home .wrap-container .container {
