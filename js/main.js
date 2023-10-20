@@ -52,7 +52,6 @@ window.onload = function() {
         "binancecoin": 0
     };
 
-    // Función para obtener el precio de una criptomoneda en dólares (USD)
     function getCoinPrice(coinSymbol, displayElement) {
         const url = `https://api.coingecko.com/api/v3/simple/price?ids=${coinSymbol}&vs_currencies=usd`;
 
@@ -60,7 +59,7 @@ window.onload = function() {
             url: url,
             method: "GET",
             headers: {
-                'Content-Type': 'application.json',
+                'Content-Type': 'application/json',
             },
             success: function(data) {
                 const currentPrice = data[coinSymbol].usd;
